@@ -2,7 +2,11 @@
 https://man7.org/linux/man-pages/man1/grep.1.html
 https://pypi.org/project/log-generator/
 
-#Bash & ipaddress sort
+#4 Bash & ipaddress sort
 https://devhints.io/bash
 https://stackoverflow.com/questions/8217049/bash-associative-array-sorting-by-value
 https://linuxhint.com/associative_array_bash/
+
+#5 Python & ipaddress sort
+https://www.pythoncheatsheet.org/
+https://thispointer.com/python-how-to-check-if-a-key-exists-in-dictionary/
