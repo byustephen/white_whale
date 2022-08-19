@@ -11,5 +11,8 @@ fi
 
 echo "remember to set your log file path in the config.config file "
 
-log-generator -t ${_runpath}/config.config
+#clean out the existing log
+> ${_runpath}/config.config
+
+log-generator -t config.config
 
