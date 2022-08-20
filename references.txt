@@ -10,3 +10,6 @@ https://linuxhint.com/associative_array_bash/
 #5 Python & ipaddress sort
 https://www.pythoncheatsheet.org/
 https://thispointer.com/python-how-to-check-if-a-key-exists-in-dictionary/
+
+#6 Terraform IAM Roles
+https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html
