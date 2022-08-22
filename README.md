@@ -5,13 +5,13 @@ Each task is either conceptual or you can acutally run it. For example, you coul
 
 So for each task I'll break it down and if it's runnable I'll include directions below.
 
-## 1
-## 2
-## 3
-## 4
+## 1 Dockerfile
+## 2 Kubernetes Objects
+## 3 Deployments
+## 4 Log parsing using a bash script
 This is a simple bash script. It assumes that you have Bash version 5.x as it uses associative arrays. To run it, simply cd into the directory and execute it from the command line: `./log_frequency.sh`
-## 5
+## 5 Log parsing using python 
 This is a simply python script. It assumes you have python 3 installed. To run it you can either call the file through python `python log_frequency.py` or since it has an executable you could also just run the script `./log_frequency.py`
-## 6
+## 6 Terraform IAM resources
 This is a collection of terraform resources built as part of a module. These files validate but they aren't connected to any aws account. Still, they are useful as a conceptional guide on how to set up users and roles. 
 
