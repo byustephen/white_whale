@@ -24,7 +24,7 @@ resource "aws_iam_policy" "moria-balrog-policy" {
 
 resource "aws_iam_group" "moria-balrog-group" {
   name = "balrogs"
-  path = "/ancient-beasts/"
+  path = var.group_path
 }
 
 resource "aws_iam_group_policy_attachment" "moria-balrog-policy-attachement" {
@@ -34,7 +34,7 @@ resource "aws_iam_group_policy_attachment" "moria-balrog-policy-attachement" {
 
 resource "aws_iam_user" "moria-balrog-user-gothmog" {
   name = "gothmog"
-  path = "/ancient-beasts/"
+  path = var.group_path
 
   tags = {
     Name = "Gothmog - A ancient and mighty Balrog"
