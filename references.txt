@@ -2,6 +2,12 @@
 https://man7.org/linux/man-pages/man1/grep.1.html
 https://pypi.org/project/log-generator/
 
+#1
+https://www.tecmint.com/awk-print-fields-columns-with-space-separator/
+https://www.linuxshelltips.com/verify-sha256-checksum-of-file-in-linux/
+https://bitcoincore.org/en/download/
+https://superuser.com/questions/1312740/how-to-take-sha256sum-of-file-and-compare-to-check-in-one-line
+
 #4 Bash & ipaddress sort
 https://devhints.io/bash
 https://stackoverflow.com/questions/8217049/bash-associative-array-sorting-by-value
