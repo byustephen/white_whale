@@ -7,6 +7,10 @@ https://www.tecmint.com/awk-print-fields-columns-with-space-separator/
 https://www.linuxshelltips.com/verify-sha256-checksum-of-file-in-linux/
 https://bitcoincore.org/en/download/
 https://superuser.com/questions/1312740/how-to-take-sha256sum-of-file-and-compare-to-check-in-one-line
+https://github.com/ruimarinho/docker-bitcoin-core
+
+#2
+https://kubernetes.io/docs/home/
 
 #4 Bash & ipaddress sort
 https://devhints.io/bash
