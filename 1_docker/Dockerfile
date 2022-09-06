@@ -4,12 +4,13 @@ FROM alpine:3.16.2
 ARG path=/var/bitcoin
 ARG tarfile=bitcoin-22.0-arm-linux-gnueabihf.tar.gz 
 ENV bitcoin_dir=bitcoin-22.0
+ENV BITCOIN_DATA=/home/bitcoin/.bitcoin
 
 #set working dir
 WORKDIR $path
 
 #updates 
-RUN apt update
+RUN apk update
 
 #download the tar and shasums
 ADD https://bitcoincore.org/bin/bitcoin-core-22.0/$tarfile $path
@@ -22,6 +23,14 @@ RUN sha256sum $tarfile | sha256sum -c SHA256SUMS 2>/dev/null | grep $tarfile | a
 RUN tar -xvf $tarfile && cd bitcoin-22.0/bin 
 RUN install -m 0755 -o root -g root -t /usr/local/bin/ /var/bitcoin/bitcoin-22.0/bin/*
 
-#all I should have to do is run "/bitcoind -daemon" but I can't get it to build for arm. 
+COPY docker-entrypoint.sh /entrypoint.sh
 
-#and set the entrypoint
+VOLUME ["/home/bitcoin/.bitcoin"]
+
+EXPOSE 8333
+
+ENTRYPOINT ["/entrypoint.sh"]
+
+RUN bitcoind -version bitcoin-core_22.0
+
+CMD ["bitcoind"]
