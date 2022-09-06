@@ -8,6 +8,7 @@ So for each task I'll break it down and if it's runnable I'll include directions
 ## 1 - Dockerfile
 Just run `make build` and then `make run`. Though I ran into a library issue on my arm laptop
 ## 2 - Kubernetes Objects
+This is setup as kustomize templates. Just cd to the 2_kubernetes directory and run `kustomize build dev` and then pipe that to a kubectl file. Eg `kustomize build dev | kubectl apply -f -`
 ## 3 - Deployments
 -didn't finish due to time and getting covid (omicron). 
 ## 4 - Log parsing using a bash script
