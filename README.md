@@ -6,6 +6,7 @@ Each task is either conceptual or you can acutally run it. For example, you coul
 So for each task I'll break it down and if it's runnable I'll include directions below.
 
 ## 1 - Dockerfile
+Just run `make build` and then `make run`. Though I ran into a library issue on my arm laptop
 ## 2 - Kubernetes Objects
 ## 3 - Deployments
 ## 4 - Log parsing using a bash script
