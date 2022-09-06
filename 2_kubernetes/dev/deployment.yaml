@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: white-whale
+  labels:
+    app: white-whale
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: white-whale
+  template:
+    metadata:
+      labels:
+        app: white-whale
+    spec:
+      containers:
+      - name: bitcoin-core
+        image: bitcoin-core_22.0
+        ports:
+        - containerPort: 8333
