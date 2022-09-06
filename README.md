@@ -9,6 +9,7 @@ So for each task I'll break it down and if it's runnable I'll include directions
 Just run `make build` and then `make run`. Though I ran into a library issue on my arm laptop
 ## 2 - Kubernetes Objects
 ## 3 - Deployments
+-didn't finish due to time and getting covid (omicron). 
 ## 4 - Log parsing using a bash script
 This is a simple bash script. It assumes that you have Bash version 5.x as it uses associative arrays. To run it, simply cd into the directory and execute it from the command line: `./log_frequency.sh`
 ## 5 - Log parsing using python 
